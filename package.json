@@ -1,0 +1,22 @@
+{
+  "name": "playwright-ui-tests",
+  "version": "1.0.0",
+  "description": "Simple Playwright UI tests (login, register, form)",
+  "scripts": {
+    "test": "playwright test -c playwright.config.js",
+    "test:headed": "playwright test -c playwright.config.js --headed",
+    "test:ui": "playwright test -c playwright.config.js --ui",
+    "test:debug": "playwright test -c playwright.config.js --debug",
+    "test:login": "playwright test -c playwright.config.js tests/login.spec.js",
+    "test:admin": "playwright test -c playwright.config.js tests/admin.spec.js",
+    "test:pim:learn": "playwright test -c playwright.config.js tests/pim.learn.spec.js",
+    "test:boss:demo": "playwright test -c playwright.config.js tests/boss.demo.spec.js --headed --workers=1",
+    "test:api:learn": "playwright test -c playwright.config.js tests/api.learn.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "dotenv": "^16.5.0"
+  }
+}
